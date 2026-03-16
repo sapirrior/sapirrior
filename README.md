@@ -48,7 +48,7 @@ I value working software over speculation, and minimal design over unnecessary c
 ## Focus Areas
 
 ```
-  AI          →  Building utilities that bridge codebases and LLMs
+  AI                  →  Building utilities that bridge codebases and LLMs
   Language Design     →  Designing and implementing programming languages
   CLI Engineering     →  Terminal-first tools for developer workflows
   ML Systems          →  Training pipelines optimised for accessibility
@@ -93,5 +93,5 @@ I value working software over speculation, and minimal design over unnecessary c
 ---
 
 <div align="center">
-<sub>Open source · MIT Licensed · Built with focus</sub>
+<sub>Open source · Happy Coding!</sub>
 </div>
