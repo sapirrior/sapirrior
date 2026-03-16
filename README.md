@@ -6,14 +6,13 @@
 
 # Nolan Stark
 
-**Software Engineer · AI Tooling · Systems Programming**
+**Software Engineer · AI · Systems Programming**
 
 *"I do code. Mostly AI related or sometimes random stuffs."*
 
 <br/>
 
 [![X](https://img.shields.io/badge/@sapirrior-%23000000.svg?style=for-the-badge&logo=X&logoColor=white)](https://x.com/sapirrior)
-[![PyPI](https://img.shields.io/badge/PyPI-codefile-%233775A9.svg?style=for-the-badge&logo=pypi&logoColor=white)](https://pypi.org/project/codefile/)
 [![GitHub](https://img.shields.io/badge/GitHub-sapirrior-%23181717.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/sapirrior)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=sapirrior&style=for-the-badge&color=0e75b6&label=PROFILE+VIEWS)
@@ -24,7 +23,7 @@
 
 ## Who I Am
 
-I am an independent software engineer based in the **United States**, building under the **Anthroberc** organisation. My work sits at the intersection of artificial intelligence, developer tooling, and systems programming. I am drawn to problems where the right tool does not yet exist — so I build it.
+I am an independent software engineer based in the **US**, building under the **Anthroberc** organisation. My work sits at the intersection of artificial intelligence, developer tooling, and systems programming. I am drawn to problems where the right tool does not yet exist — so I build it.
 
 I value working software over speculation, and minimal design over unnecessary complexity.
 
@@ -35,7 +34,7 @@ I value working software over speculation, and minimal design over unnecessary c
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-%233776AB.svg?style=for-the-badge&logo=python&logoColor=white)
-![C++](https://img.shields.io/badge/C++20-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
