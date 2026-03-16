@@ -23,7 +23,7 @@
 
 ## Who I Am
 
-I am an independent software engineer based in the **US**, building under the **Anthroberc** organisation. My work sits at the intersection of artificial intelligence, developer tooling, and systems programming. I am drawn to problems where the right tool does not yet exist — so I build it.
+I am an independent software engineer, building under the **Anthroberc** organisation. My work sits at the intersection of artificial intelligence, developer tooling, and systems programming. I am drawn to problems where the right tool does not yet exist — so I build it.
 
 I value working software over speculation, and minimal design over unnecessary complexity.
 
@@ -37,11 +37,9 @@ I value working software over speculation, and minimal design over unnecessary c
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-%23FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
-![macOS](https://img.shields.io/badge/macOS-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-%230078D6.svg?style=for-the-badge&logo=windows&logoColor=white)
+![Javascript](https://img.shields.io/badge/Javascript-%233776AB.svg?style=for-the-badge&logo=Javascript&logoColor=white)
 
 </div>
 
