@@ -70,17 +70,6 @@ I value working software over speculation, and minimal design over unnecessary c
 
 ---
 
-## Projects
-
-| Repository | Description | Language |
-|---|---|---|
-| [cplus](https://github.com/sapirrior/cplus) | A high-level programming language built in C++20 | C++ |
-| [codefile](https://github.com/sapirrior/codefile) | Pack a codebase into one LLM-ready context file | Python |
-| [garlic-ai-trainer](https://github.com/sapirrior/garlic-ai-trainer) | Minimal PyTorch library for LSTM text generation | Python |
-| [code-edith](https://github.com/sapirrior/code-edith) | A local CLI coding agent | Python |
-
----
-
 ## Connect
 
 <div align="center">
