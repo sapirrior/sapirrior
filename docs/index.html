@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Template</title>
+    <style>
+        /* 1. Header Font */
+        /* Exact Font: Urbanist-Bold.ttf */
+        @font-face {
+            font-family: 'Urbanist';
+            src: url('https://cdn.jsdelivr.net/gh/sapirrior/sapirrior@main/src/fonts/urbanist/static/Urbanist-Bold.ttf') format('truetype');
+            font-weight: 700;
+        }
+
+        /* 2. Body Font */
+        /* Exact Font: Lora-Regular.ttf */
+        @font-face {
+            font-family: 'Lora';
+            src: url('https://cdn.jsdelivr.net/gh/sapirrior/sapirrior@main/src/fonts/lora/static/Lora-Regular.ttf') format('truetype');
+            font-weight: 400;
+        }
+
+        /* 3. Code Font */
+        /* Exact Font: JetBrainsMono-Regular.ttf */
+        @font-face {
+            font-family: 'JetBrains Mono';
+            src: url('https://cdn.jsdelivr.net/gh/sapirrior/sapirrior@main/src/fonts/jetbrains_mono/static/JetBrainsMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+        }
+
+        /* --- Strict Application --- */
+        body {
+            /* Warm, cream background */
+            background-color: #fdf6e3; 
+            margin: 40px 15px; 
+            max-width: 800px;
+            padding: 0; 
+            text-align: left; 
+        }
+
+        /* Headers ONLY use Urbanist */
+        h1, h2, h3 {
+            font-family: 'Urbanist', sans-serif;
+            font-weight: 700;
+            color: #2d2d2d;
+            letter-spacing: -0.02em;
+        }
+
+        /* Paragraphs ONLY use Lora */
+        p {
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #4a4a4a;
+        }
+
+        /* Code ONLY uses JetBrains Mono */
+        pre, code {
+            font-family: 'JetBrains Mono', monospace;
+            font-weight: 400;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            padding: 16px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            overflow-x: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Lorem Ipsum Dolor</h1>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <h2>Consectetur Adipiscing Elit</h2>
+    
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+    <h2>Pellentesque Habitant</h2>
+    
+    <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+
+<pre><code>// Integer eget aliquet nibh
+function litoraTorquent() {
+    const perConubia = "Nostra";
+    let inceptos = 42;
+    return perConubia + inceptos;
+}</code></pre>
+
+</body>
+</html>
+
