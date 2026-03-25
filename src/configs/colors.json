@@ -1,0 +1,20 @@
+{
+  "theme_light": {
+    "background": "#fdf6e3",
+    "heading_text": "#2d2d2d",
+    "body_text": "#4a4a4a",
+    "code_background": "#1e1e1e"
+  },
+  "theme_dark": {
+    "background": "#262624",
+    "heading_text": "#ffffff",
+    "body_text": "#e6e2dd",
+    "code_background": "#1a1a18"
+  },
+  "accents": {
+    "orangex": "#D97757",
+    "greyx": "#808080",
+    "resetx": "#FFFFFF"
+  }
+}
+

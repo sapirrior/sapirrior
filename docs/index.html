@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typography Template</title>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
     <style>
         /* 1. Header Font */
         /* Exact Font: Urbanist-Bold.ttf */
@@ -29,22 +32,39 @@
             font-weight: 400;
         }
 
+        /* --- Theme Variables --- */
+        :root {
+            --bg-color: #fdf6e3;         /* Warm cream */
+            --text-color: #4a4a4a;       /* Soft dark gray */
+            --heading-color: #2d2d2d;    /* Deep gray for contrast */
+            --code-bg: #1e1e1e;          /* Standard dark code block */
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #262624;         /* Custom warm academic dark */
+            --text-color: #e6e2dd;       /* Crisp, soft cream text */
+            --heading-color: #ffffff;    /* Pure white for headers to pop */
+            --code-bg: #1a1a18;          /* Adjusted slightly darker for code contrast */
+        }
+
         /* --- Strict Application --- */
         body {
-            /* Warm, cream background */
-            background-color: #fdf6e3; 
+            background-color: var(--bg-color); 
+            color: var(--text-color);
             margin: 40px 15px; 
             max-width: 800px;
             padding: 0; 
             text-align: left; 
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         /* Headers ONLY use Urbanist */
         h1, h2, h3 {
             font-family: 'Urbanist', sans-serif;
             font-weight: 700;
-            color: #2d2d2d;
+            color: var(--heading-color);
             letter-spacing: -0.02em;
+            transition: color 0.3s ease;
         }
 
         /* Paragraphs ONLY use Lora */
@@ -53,24 +73,55 @@
             font-weight: 400;
             font-size: 1.15rem;
             line-height: 1.6;
-            color: #4a4a4a;
         }
 
         /* Code ONLY uses JetBrains Mono */
-        pre, code {
-            font-family: 'JetBrains Mono', monospace;
+        pre[class*="language-"], 
+        code[class*="language-"] {
+            font-family: 'JetBrains Mono', monospace !important;
             font-weight: 400;
-            background-color: #1e1e1e;
-            color: #d4d4d4;
-            padding: 16px;
-            border-radius: 8px;
             font-size: 0.95rem;
-            overflow-x: auto;
-            display: block;
+            border-radius: 8px;
+            background-color: var(--code-bg) !important;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Toggle Button Styles */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            color: var(--heading-color);
+            cursor: pointer;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease;
+            border-radius: 50%;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            background-color: rgba(128, 128, 128, 0.1);
+        }
+
+        .theme-toggle svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
         }
     </style>
 </head>
 <body>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+        <svg id="theme-icon" viewBox="0 0 24 24">
+            <path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"/>
+        </svg>
+    </button>
 
     <h1>Lorem Ipsum Dolor</h1>
     
@@ -84,12 +135,61 @@
     
     <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
 
-<pre><code>// Integer eget aliquet nibh
-function litoraTorquent() {
-    const perConubia = "Nostra";
-    let inceptos = 42;
-    return perConubia + inceptos;
-}</code></pre>
+<pre><code class="language-python"># Integer eget aliquet nibh
+import asyncio
+from dataclasses import dataclass
+from typing import List, Optional
+
+@dataclass
+class Node:
+    name: str
+    value: int
+    children: Optional[List['Node']] = None
+
+async def litora_torquent(base_node: Node) -> str:
+    """
+    Pellentesque habitant morbi tristique senectus et netus.
+    """
+    per_conubia = "Nostra"
+    inceptos = 42
+    
+    if base_node.value > inceptos:
+        await asyncio.sleep(1)
+        return f"{per_conubia} - {base_node.name} ({base_node.value})"
+        
+    return "Default state"
+
+async def main():
+    root = Node(name="RootNode", value=100)
+    result = await litora_torquent(root)
+    print(f"Result: {result}")
+
+if __name__ == "__main__":
+    asyncio.run(main())</code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        
+        // SVG Paths for Sun and Moon
+        const moonPath = "M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z";
+        const sunPath = "M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0-.39.39-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0 .39-.39.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06zM7.05 18.36c.39-.39.39-1.03 0-1.41-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41.39.39 1.03.39 1.41 0l1.06-1.06z";
+
+        toggleBtn.addEventListener('click', () => {
+            const isDark = document.body.getAttribute('data-theme') === 'dark';
+            
+            if (isDark) {
+                document.body.removeAttribute('data-theme');
+                themeIcon.innerHTML = `<path d="${moonPath}"/>`;
+            } else {
+                document.body.setAttribute('data-theme', 'dark');
+                themeIcon.innerHTML = `<path d="${sunPath}"/>`;
+            }
+        });
+    </script>
 
 </body>
 </html>
